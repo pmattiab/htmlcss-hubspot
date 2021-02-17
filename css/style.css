@@ -16,6 +16,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.padding_tb_40 {
+    padding: 40px 0;
+}
+
 header .menu {
     list-style-type: none;
 }
@@ -171,10 +175,6 @@ header .banner .banner_title .orange_button {
 
 /* MAIN */
 
-main .advantages {
-    padding: 40px 0;
-}
-
 main .advantages img {
     width: 30%;
 }
@@ -182,5 +182,30 @@ main .advantages img {
 main .advantages h2 {
     margin-bottom: 30px;
 }
+
+/* INIZIO TEST STRUTTURA */
+
+main .results {
+    border: 2px solid red;
+    height: 1000px;
+}
+
+.top_row {
+    border: 2px solid blue;
+    height: 300px;
+}
+
+.bottom_row {
+    border: 2px solid green;
+    height: 300px;
+}
+
+main .results .bottom_row .col {
+    width: 33%;
+    height: 290px;
+    border: 2px solid yellow;
+}
+
+/* FINE TEST STRUTTURA */
 
 /* FOOTER */

@@ -190,12 +190,25 @@ main .results {
     height: 1000px;
 }
 
-.top_row {
+main .results .top_row {
     border: 2px solid blue;
     height: 300px;
 }
 
-.bottom_row {
+main .results .top_row .col{
+    border: 2px solid yellow;
+    height: 290px;
+}
+
+main .results .top_row .col_sx {
+    width: 25%;
+}
+
+main .results .top_row .col_dx {
+    width: 75%;
+}
+
+main .results .bottom_row {
     border: 2px solid green;
     height: 300px;
 }

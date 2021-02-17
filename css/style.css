@@ -36,7 +36,15 @@ header .menu .col a {
 .container {
     width: 70%;
     margin: 0 auto;
+    position: relative;
 }
+
+.strict_container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
 
 .clearfix:after {
     content: "";
@@ -53,10 +61,24 @@ header .menu .col a {
 }
 
 .orange_button {
+    text-decoration: none;
     padding: 20px 30px;
     color: white;
     background-color: rgb(254, 119, 89);
     border-radius: 5px;
+    display: inline-block;
+}
+
+.blue_text {
+    color: rgb(51, 71, 91);
+}
+
+.bg_lightblue {
+    background-color: rgb(244, 249, 253);
+}
+
+h2 {
+    font-size: 30px;
 }
 
 /* HEADER */
@@ -67,7 +89,7 @@ nav .top_nav {
     border-bottom: 1px solid rgb(51, 71, 91);
 }
 
-header .menu .col_sx a {
+header .menu a {
     color: rgb(51, 71, 91);
 }
 
@@ -95,7 +117,9 @@ header .menu .login {
 }
 
 header .menu .orange_button {
+    color: white;
     padding: 12px 10px;
+    display: inline;
 }
 
 nav .bottom_nav {
@@ -104,6 +128,7 @@ nav .bottom_nav {
 
 header .menu .logo {
     height: 100%;
+    vertical-align: middle;
 }
 
 header .menu .bottom_nav .fa-chevron-down {
@@ -120,6 +145,23 @@ header .banner {
     background-position: 100% 13%;
 }
 
+header .banner .banner_title{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+header .banner .banner_title h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+header .banner .banner_title .orange_button {
+    margin: 30px 0;
+}
+
+
 .colored_row {
     height: 100px;
     background-color: rgb(175, 235, 228);
@@ -129,5 +171,16 @@ header .banner {
 
 /* MAIN */
 
+main .advantages {
+    padding: 40px 0;
+}
+
+main .advantages img {
+    width: 30%;
+}
+
+main .advantages h2 {
+    margin-bottom: 30px;
+}
 
 /* FOOTER */

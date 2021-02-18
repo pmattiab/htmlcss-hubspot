@@ -450,3 +450,17 @@ footer .language li {
 footer .bottom_footer {
     margin-top: 40px;
 }
+
+.bottom_footer .col_dx {
+    text-align: right;
+}
+
+.bottom_footer .logo {
+    height: 35px;
+    width: auto;
+}
+
+.bottom_footer .menu li {
+    display: inline-block;
+    margin-left: 20px;
+}

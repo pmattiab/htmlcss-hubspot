@@ -43,12 +43,16 @@ body {
     float: left;
 }
 
-.two_columns .col_sx, .col_dx {
+.two_columns .col {
     width: 50%;
 }
 
-.three_columns .col_sx, .col_dx {
-    width: 50%;
+.three_columns .col {
+    width: 30%;
+}
+
+.three_columns .col_cx {
+    margin: 0 5%;
 }
 
 .four_columns .col {
@@ -75,6 +79,10 @@ main p {
 
 .white_text {
     color: white;
+}
+
+.little_text {
+    font-size: 12px;
 }
 
 .bg_lightblue {
@@ -236,19 +244,15 @@ main .services .col img {
     margin: 30px 0;
 }
 
-/* chiedere ai tutor come mettere insieme*/
-.services .top_row {
+.services .top_row,
+.services .bottom_row .col {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 70px 0;
 }
 
-/* chiedere ai tutor come mettere insieme*/
 .services .bottom_row .col {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
 }
@@ -275,14 +279,6 @@ main .services .col img {
 
 .services .bottom_row hr {
     margin: 70px 0 0;
-}
-
-main .three_columns .col {
-    width: 30%;
-}
-
-main .three_columns .col_cx {
-    margin: 0 5%;
 }
 
 main .top_row .col_dx {
@@ -358,9 +354,10 @@ main .partners .col_sx {
 
 main .partners .col_dx {
     width: 75%;
+    text-align: right;
 }
 
-main .partners .col_dx {
+main .start .col_dx {
     text-align: right;
 }
 
@@ -377,17 +374,23 @@ main .partners .col_dx img {
     vertical-align: middle;
 }
 
-/* TEST */
-main .start {
-    height: 500px;
-    padding: 50px 0 50px;
-} /* TEST */
+main .start .orange_button {
+    margin: 50px 0;
+}
 
-/* TEST */
-main .start .container {
-    height: 100%;
-    border: 2px solid #33475b;
-} /* TEST */
+main .start .col_dx img {
+    height: 375px;
+    width: auto;
+}
+
+main .start {
+    padding: 50px 0 50px;
+}
+
+main .start .col_sx {
+    width: 50%;
+    padding-right: 8%;
+}
 
 /* TEST */
 footer {

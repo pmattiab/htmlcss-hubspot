@@ -291,6 +291,10 @@ main .check {
     list-style-type: none;
 }
 
+.three_columns ul {
+    margin-bottom: 50px;
+}
+
 .two_columns .check li {
     display: inline-block;
     margin-right: 20px;
@@ -316,9 +320,20 @@ main .results .nmb_table {
     margin: 50px 0;
 }
 
-/* chidere ai tutor */
-.bottom_numbers_tbl:last-child {
+/* chidere ai tutor come unirli */
+.bottom_numbers_tbl .col:last-child {
     border-right: none;
+}
+
+/* chidere ai tutor come unirli */
+.top_numbers_tbl .col:last-child {
+    border-right: none;
+}
+
+/* chidere ai tutor */
+.bottom_numbers_tbl .col img:last-child {
+    height: 25px;
+    width: auto;
 }
 
 main .results .top_numbers_tbl .col {

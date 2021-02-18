@@ -89,9 +89,9 @@ main p {
     color: #33475b;
 }
 
-.white_text {
+/* .white_text {
     color: white;
-}
+} */
 
 .little_text {
     font-size: 12px;
@@ -307,6 +307,7 @@ main .check {
 }
 
 main .results {
+    color: white;
     background-image: linear-gradient(to right, #00acb6 , #00baa9);
     padding: 50px 0;
     text-align: center;
@@ -399,14 +400,19 @@ main .start .col_sx {
 /* FOOTER */
 
 footer {
+    color: white;
     padding: 40px 0 40px;
 }
 
-footer .menu a {
+footer a {
+    color: white;
+}
+
+.top_footer .menu a {
     line-height: 35px;
 }
 
-footer .menu span {
+.top_footer .menu span {
     display: inline-block;
     margin-bottom: 20px;
 }
@@ -416,12 +422,31 @@ footer .menu span {
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block;
-    margin: 10px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 15px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
 footer .social li {
     font-size: 18px;
     display: inline-block;
     width: 15%;
+}
+
+footer .centered_footer {
+    padding-top: 70px;
+    text-align: center;
+}
+
+footer .centered_footer hr {
+    color: white;
+}
+
+footer .language li {
+    font-size: 18px;
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+footer .bottom_footer {
+    margin-top: 40px;
 }

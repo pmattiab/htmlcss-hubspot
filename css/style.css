@@ -39,6 +39,18 @@ body {
     clear: both;
 }
 
+/* toglie il puntino da
+tutti gli ul con classe menu */
+.menu {
+    list-style-type: none;
+}
+
+/* toglie lo stile a tutte
+le a dentro gli ul con classe menu */
+.menu a {
+    text-decoration: none;
+}
+
 .col {
     float: left;
 }
@@ -110,10 +122,6 @@ nav .top_nav {
     border-bottom: 1px solid #33475b;
 }
 
-header .menu {
-    list-style-type: none;
-}
-
 header .menu ul {
     line-height: 90px;
 }
@@ -122,10 +130,6 @@ header .menu li {
     display: inline-block;
     margin: 0 10px;
     vertical-align: middle;
-}
-
-header .menu .col a {
-    text-decoration: none;
 }
 
 header .menu .language_choise a {
@@ -392,14 +396,32 @@ main .start .col_sx {
     padding-right: 8%;
 }
 
-/* TEST */
-footer {
-    height: 620px;
-    padding: 40px 0 40px;
-} /* TEST */
+/* FOOTER */
 
-/* TEST */
-footer .container {
-    height: 100%;
-    border: 2px solid white;
-} /* TEST */
+footer {
+    padding: 40px 0 40px;
+}
+
+footer .menu a {
+    line-height: 35px;
+}
+
+footer .menu span {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#contact_button {
+    background-color: #dadee0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer .social li {
+    font-size: 18px;
+    display: inline-block;
+    width: 15%;
+}

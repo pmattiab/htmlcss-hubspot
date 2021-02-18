@@ -236,17 +236,19 @@ main .services .col img {
     margin: 30px 0;
 }
 
+/* chiedere ai tutor come mettere insieme*/
 .services .top_row {
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* da mettere insieme*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 70px 0;
 }
 
+/* chiedere ai tutor come mettere insieme*/
 .services .bottom_row .col {
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* da mettere insieme*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
 }
@@ -320,18 +322,13 @@ main .results .nmb_table {
     margin: 50px 0;
 }
 
-/* chidere ai tutor come unirli */
+.top_numbers_tbl .col:last-child,
 .bottom_numbers_tbl .col:last-child {
     border-right: none;
 }
 
-/* chidere ai tutor come unirli */
-.top_numbers_tbl .col:last-child {
-    border-right: none;
-}
-
-/* chidere ai tutor */
-.bottom_numbers_tbl .col img:last-child {
+/* immagine nella ultima colonna di bottom */
+.bottom_numbers_tbl .col:last-child img {
     height: 25px;
     width: auto;
 }
@@ -351,38 +348,55 @@ main .results .nmb {
     line-height: 60px;
 }
 
-/* TEST */
-main .parterns {
-    height: 270px;
+main .partners {
     padding: 60px 10% 0;
 }
 
-/* TEST */
-main .parterns .container {
-    height: 100%;
-    border: 2px solid red;
+main .partners .col_sx {
+    width: 25%;
+}
+
+main .partners .col_dx {
+    width: 75%;
+}
+
+main .partners .col_dx {
+    text-align: right;
+}
+
+#customers_number {
+    font-size: 50px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+main .partners .col_dx img {
+    width: 18%;
+    margin-left: 3%;
+    vertical-align: middle;
 }
 
 /* TEST */
 main .start {
     height: 500px;
     padding: 50px 0 50px;
-}
+} /* TEST */
 
 /* TEST */
 main .start .container {
     height: 100%;
-    border: 2px solid red;
-}
+    border: 2px solid #33475b;
+} /* TEST */
 
 /* TEST */
 footer {
     height: 620px;
     padding: 40px 0 40px;
-}
+} /* TEST */
 
 /* TEST */
 footer .container {
     height: 100%;
-    border: 2px solid red;
-}
+    border: 2px solid white;
+} /* TEST */

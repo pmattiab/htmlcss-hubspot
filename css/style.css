@@ -16,27 +16,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.padding_tb_40 {
-    padding: 40px 0;
-}
-
-header .menu {
-    list-style-type: none;
-}
-
-header .menu ul {
-    line-height: 90px;
-}
-
-header .menu li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-header .menu .col a {
-    text-decoration: none;
-}
-
 .container {
     width: 70%;
     margin: 0 auto;
@@ -45,10 +24,14 @@ header .menu .col a {
 
 .strict_container {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
 }
 
+.box_container {
+    width: 93%;
+    margin: 0 auto;
+}
 
 .clearfix:after {
     content: "";
@@ -64,41 +47,81 @@ header .menu .col a {
     width: 50%;
 }
 
+.three_columns .col_sx, .col_dx {
+    width: 50%;
+}
+
+.four_columns .col {
+    width: 25%;
+}
+
 .orange_button {
     text-decoration: none;
     padding: 20px 30px;
     color: white;
-    background-color: rgb(254, 119, 89);
+    background-color: #fe7759;
     border-radius: 5px;
     display: inline-block;
 }
 
+/* tutti i p nella main */
+main p {
+    line-height: 25px;
+}
+
 .blue_text {
-    color: rgb(51, 71, 91);
+    color: #33475b;
+}
+
+.white_text {
+    color: white;
 }
 
 .bg_lightblue {
-    background-color: rgb(244, 249, 253);
+    background-color: #f4f9fd;
+}
+
+.bg_darkblue {
+background-color: #32495b;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 33px;
+}
+
+.fa-check-circle {
+    color: #fe7759;
+    margin-right: 15px;
 }
 
 /* HEADER */
 
 nav .top_nav {
     height: 90px;
-    background-color: rgb(243, 249, 253);
-    border-bottom: 1px solid rgb(51, 71, 91);
+    background-color: #f4f9fd;
+    border-bottom: 1px solid #33475b;
 }
 
-header .menu a {
-    color: rgb(51, 71, 91);
+header .menu {
+    list-style-type: none;
+}
+
+header .menu ul {
+    line-height: 90px;
+}
+
+header .menu li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+header .menu .col a {
+    text-decoration: none;
 }
 
 header .menu .language_choise a {
-    border-right: 1px solid rgb(51, 71, 91);
+    border-right: 1px solid #33475b;
 }
 
 header .menu .top_nav .fa-chevron-down {
@@ -110,13 +133,14 @@ header .menu .col_dx {
 }
 
 header .menu .fa-search {
-    color:rgb(0, 166, 190)
+    color:#00aac2;
 }
 
 header .menu .login {
+    background-color: white;
+    color: #fe7759;
+    border: 1px solid #fe7759;
     padding: 10px;
-    color: rgb(254, 119, 89);
-    border: 1px solid rgb(254, 119, 89);
     border-radius: 5px;
 }
 
@@ -142,7 +166,7 @@ header .menu .bottom_nav .fa-chevron-down {
 header .banner {
     width: 100%;
     height: 600px;
-    background-color: rgb(254, 247, 239);
+    background-color: #fff2ee;
     background-image: url(../img/jumbotron.png);
     background-size: 80%;
     background-repeat: no-repeat;
@@ -168,57 +192,182 @@ header .banner .banner_title .orange_button {
 
 .colored_row {
     height: 100px;
-    background-color: rgb(175, 235, 228);
-    border-top: 5px solid rgb(51, 71, 91);
-    border-bottom: 5px solid rgb(51, 71, 91);
+    background-color: #afebe4;
+    border-top: 5px solid #33475b;
+    border-bottom: 5px solid #33475b;
 }
 
 /* MAIN */
 
-main .advantages img {
+main .advantages {
+    padding-top: 50px;
+}
+
+.advantages img {
     width: 30%;
 }
 
-main .advantages h2 {
+main h2 {
     margin-bottom: 30px;
 }
 
-/* INIZIO TEST STRUTTURA */
+main .services {
+    padding-top: 50px;
+}
+
+/* tutte le img nella sezione risultati */
+main .services .col img {
+    height: 110px;
+    width: auto;
+    display: block;
+    margin: 0 auto 25px;
+}
+
+/* tutti gli h3 nella sezione risultati */
+.services h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+/* tutti gli h4 nella sezione risultati */
+.services h4 {
+    display: inline-block;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.services .top_row {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* da mettere insieme*/
+    padding: 70px 0;
+}
+
+.services .bottom_row .col {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* da mettere insieme*/
+    text-align: center;
+    padding: 20px;
+}
+
+.services .top_row .col_sx {
+    width: 30%;
+    text-align: center;
+}
+
+.services .top_row .col_dx {
+    width: 70%;
+}
+
+.services .bottom_row {
+    padding: 50px 0;
+}
+
+.services .top_row hr {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    margin-left: 10%;
+}
+
+.services .bottom_row hr {
+    margin: 70px 0 0;
+}
+
+main .three_columns .col {
+    width: 30%;
+}
+
+main .three_columns .col_cx {
+    margin: 0 5%;
+}
+
+main .top_row .col_dx {
+    padding-right: 10%;
+}
+
+main .check {
+    list-style-type: none;
+}
+
+.two_columns .check li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.three_columns .check li {
+    text-align: left;
+}
 
 main .results {
+    background-image: linear-gradient(to right, #00acb6 , #00baa9);
+    padding: 50px 0;
+    text-align: center;
+}
+
+main .results .col {
+    text-align: center;
+    border-right: 1.5px solid white;
+    padding: 20px 0;
+}
+
+main .results .nmb_table {
+    margin: 50px 0;
+}
+
+/* chidere ai tutor */
+.bottom_numbers_tbl:last-child {
+    border-right: none;
+}
+
+main .results .top_numbers_tbl .col {
+    border-bottom: 1.5px solid white;
+}
+
+main .results img {
+    height: 35px;
+    width: auto;
+}
+
+main .results .nmb {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+/* TEST */
+main .parterns {
+    height: 270px;
+    padding: 60px 10% 0;
+}
+
+/* TEST */
+main .parterns .container {
+    height: 100%;
     border: 2px solid red;
-    height: 1000px;
 }
 
-main .results .top_row {
-    border: 2px solid blue;
-    height: 300px;
+/* TEST */
+main .start {
+    height: 500px;
+    padding: 50px 0 50px;
 }
 
-main .results .top_row .col{
-    border: 2px solid yellow;
-    height: 290px;
+/* TEST */
+main .start .container {
+    height: 100%;
+    border: 2px solid red;
 }
 
-main .results .top_row .col_sx {
-    width: 25%;
+/* TEST */
+footer {
+    height: 620px;
+    padding: 40px 0 40px;
 }
 
-main .results .top_row .col_dx {
-    width: 75%;
+/* TEST */
+footer .container {
+    height: 100%;
+    border: 2px solid red;
 }
-
-main .results .bottom_row {
-    border: 2px solid green;
-    height: 300px;
-}
-
-main .results .bottom_row .col {
-    width: 33%;
-    height: 290px;
-    border: 2px solid yellow;
-}
-
-/* FINE TEST STRUTTURA */
-
-/* FOOTER */

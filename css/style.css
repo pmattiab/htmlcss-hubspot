@@ -22,6 +22,11 @@ body {
     position: relative;
 }
 
+/* rende l'elemento inline-block */
+.display_ib {
+    display: inline-block;
+}
+
 .strict_container {
     width: 50%;
     margin: 0 auto;
@@ -243,7 +248,6 @@ main .services .col img {
 
 /* tutti gli h4 nella sezione risultati */
 .services h4 {
-    display: inline-block;
     font-size: 18px;
     margin: 30px 0;
 }
@@ -275,7 +279,6 @@ main .services .col img {
 }
 
 .services .top_row hr {
-    display: inline-block;
     width: 60%;
     vertical-align: middle;
     margin-left: 10%;
@@ -366,10 +369,9 @@ main .start .col_dx {
     text-align: right;
 }
 
-#customers_number {
+main .partners #customers_number {
     font-size: 50px;
     font-weight: 700;
-    display: inline-block;
     margin-bottom: 50px;
 }
 
@@ -413,15 +415,13 @@ footer a {
 }
 
 .top_footer .menu span {
-    display: inline-block;
     margin-bottom: 20px;
 }
 
-#contact_button {
+footer #contact_button {
     background-color: #dadee0;
     padding: 5px 10px;
     border-radius: 5px;
-    display: inline-block;
     margin: 15px 0;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }

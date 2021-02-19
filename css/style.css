@@ -27,9 +27,8 @@ body {
     display: inline-block;
 }
 
-.strict_container {
-    width: 50%;
-    margin: 0 auto;
+/* allinea i contenuti dell'elemento */
+.tac {
     text-align: center;
 }
 
@@ -217,7 +216,7 @@ header .banner .banner_title .orange_button {
 /* MAIN */
 
 main .advantages {
-    padding-top: 50px;
+    padding: 50px 13% 0;
 }
 
 .advantages img {
@@ -230,6 +229,20 @@ main h2 {
 
 main .services {
     padding-top: 50px;
+}
+
+.services .col_crm_sx {
+    float: left;
+    width: 25%;
+    margin-right: 10%;
+}
+
+.services .col_crm_dx {
+    float: left;
+    height: 1.5px;
+    width: 65%;
+    margin-top: 40px;
+    background-color: #33475b;
 }
 
 /* tutte le img nella sezione risultati */
@@ -261,13 +274,11 @@ main .services .col img {
 }
 
 .services .bottom_row .col {
-    text-align: center;
     padding: 20px;
 }
 
 .services .top_row .col_sx {
     width: 30%;
-    text-align: center;
 }
 
 .services .top_row .col_dx {
@@ -278,14 +289,12 @@ main .services .col img {
     padding: 50px 0;
 }
 
-.services .top_row hr {
-    width: 60%;
-    vertical-align: middle;
-    margin-left: 10%;
+.services .bottom_row .serv_descr {
+    margin-bottom: 70px;
 }
 
-.services .bottom_row hr {
-    margin: 70px 0 0;
+.services .bottom_row .pop_fea {
+    border-top: 2px solid #33475b;
 }
 
 main .top_row .col_dx {
@@ -313,11 +322,9 @@ main .results {
     color: white;
     background-image: linear-gradient(to right, #00acb6 , #00baa9);
     padding: 50px 0;
-    text-align: center;
 }
 
 main .results .col {
-    text-align: center;
     border-right: 1.5px solid white;
     padding: 20px 0;
 }
@@ -432,19 +439,18 @@ footer .social li {
     width: 15%;
 }
 
-footer .centered_footer {
+footer .central_footer {
     padding-top: 70px;
-    text-align: center;
-}
-
-footer .centered_footer hr {
-    color: white;
 }
 
 footer .language li {
     font-size: 18px;
     display: inline-block;
     margin: 20px 10px;
+}
+
+footer .central_footer .language {
+    border-bottom: 1.5px solid white;
 }
 
 footer .bottom_footer {

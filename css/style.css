@@ -1,5 +1,4 @@
 /* RESET */
-
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@ img {
 }
 
 /* COMMON */
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -22,12 +20,6 @@ body {
     position: relative;
 }
 
-/* rende l'elemento inline-block */
-.display_ib {
-    display: inline-block;
-}
-
-/* allinea i contenuti dell'elemento */
 .tac {
     text-align: center;
 }
@@ -43,24 +35,25 @@ body {
     clear: both;
 }
 
-/* toglie il puntino da
-tutti gli ul con classe menu */
-.menu {
+* ul {
     list-style-type: none;
 }
 
-/* toglie lo stile a tutte
-le a dentro gli ul con classe menu */
-.menu a {
+* a {
     text-decoration: none;
+}
+
+* .display_ib li {
+    display: inline-block;
 }
 
 .col {
     float: left;
 }
 
-.two_columns .col {
-    width: 50%;
+.two_columns .col_dx {
+    float: right;
+    text-align: right;
 }
 
 .three_columns .col {
@@ -75,16 +68,22 @@ le a dentro gli ul con classe menu */
     width: 25%;
 }
 
-.orange_button {
-    text-decoration: none;
-    padding: 20px 30px;
-    color: white;
-    background-color: #fe7759;
+.button {
     border-radius: 5px;
     display: inline-block;
 }
 
-/* tutti i p nella main */
+header .menu .button {
+    padding: 12px 10px;
+    display: inline;
+}
+
+.orange_btn {
+    color: white;
+    background-color: #fe7759;
+    padding: 20px 30px;
+}
+
 main p {
     line-height: 25px;
 }
@@ -92,10 +91,6 @@ main p {
 .blue_text {
     color: #33475b;
 }
-
-/* .white_text {
-    color: white;
-} */
 
 .little_text {
     font-size: 12px;
@@ -119,7 +114,6 @@ h2 {
 }
 
 /* HEADER */
-
 nav .top_nav {
     height: 90px;
     background-color: #f4f9fd;
@@ -131,9 +125,12 @@ header .menu ul {
 }
 
 header .menu li {
-    display: inline-block;
     margin: 0 10px;
-    vertical-align: middle;
+}
+
+header .top_nav .language_choise,
+header .bottom_nav .logo {
+    margin-left: 0;
 }
 
 header .menu .language_choise a {
@@ -144,34 +141,21 @@ header .menu .top_nav .fa-chevron-down {
     margin-right: 20px;
 }
 
-header .menu .col_dx {
-    text-align: right;
-}
-
 header .menu .fa-search {
     color:#00aac2;
 }
 
-header .menu .login {
+header .menu .login_btn {
     background-color: white;
     color: #fe7759;
     border: 1px solid #fe7759;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-header .menu .orange_button {
-    color: white;
-    padding: 12px 10px;
-    display: inline;
 }
 
 nav .bottom_nav {
     height: 90px;
 }
 
-header .menu .logo {
-    height: 100%;
+header .bottom_nav .logo_img {
     vertical-align: middle;
 }
 
@@ -201,10 +185,9 @@ header .banner .banner_title h1 {
     margin-bottom: 20px;
 }
 
-header .banner .banner_title .orange_button {
+header .banner .banner_title .button {
     margin: 30px 0;
 }
-
 
 .colored_row {
     height: 100px;
@@ -214,7 +197,6 @@ header .banner .banner_title .orange_button {
 }
 
 /* MAIN */
-
 main .advantages {
     padding: 50px 13% 0;
 }
@@ -245,7 +227,6 @@ main .services {
     background-color: #33475b;
 }
 
-/* tutte le img nella sezione risultati */
 main .services .col img {
     height: 110px;
     width: auto;
@@ -253,13 +234,11 @@ main .services .col img {
     margin: 0 auto 25px;
 }
 
-/* tutti gli h3 nella sezione risultati */
 .services h3 {
     font-size: 25px;
     margin-bottom: 30px;
 }
 
-/* tutti gli h4 nella sezione risultati */
 .services h4 {
     font-size: 18px;
     margin: 30px 0;
@@ -283,6 +262,7 @@ main .services .col img {
 
 .services .top_row .col_dx {
     width: 70%;
+    text-align: left;
 }
 
 .services .bottom_row {
@@ -293,6 +273,10 @@ main .services .col img {
     margin-bottom: 70px;
 }
 
+.pop_fea li {
+    display: block;
+}
+
 .services .bottom_row .pop_fea {
     border-top: 2px solid #33475b;
 }
@@ -301,16 +285,11 @@ main .top_row .col_dx {
     padding-right: 10%;
 }
 
-main .check {
-    list-style-type: none;
-}
-
 .three_columns ul {
     margin-bottom: 50px;
 }
 
 .two_columns .check li {
-    display: inline-block;
     margin-right: 20px;
 }
 
@@ -338,7 +317,6 @@ main .results .nmb_table {
     border-right: none;
 }
 
-/* immagine nella ultima colonna di bottom */
 .bottom_numbers_tbl .col:last-child img {
     height: 25px;
     width: auto;
@@ -369,17 +347,13 @@ main .partners .col_sx {
 
 main .partners .col_dx {
     width: 75%;
-    text-align: right;
-}
-
-main .start .col_dx {
-    text-align: right;
 }
 
 main .partners #customers_number {
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 50px;
+    display: inline-block;
+    padding-bottom: 50px;
 }
 
 main .partners .col_dx img {
@@ -388,7 +362,7 @@ main .partners .col_dx img {
     vertical-align: middle;
 }
 
-main .start .orange_button {
+main .start .button {
     margin: 50px 0;
 }
 
@@ -407,7 +381,6 @@ main .start .col_sx {
 }
 
 /* FOOTER */
-
 footer {
     color: white;
     padding: 40px 0 40px;
@@ -421,21 +394,19 @@ footer a {
     line-height: 35px;
 }
 
-.top_footer .menu span {
+.top_footer .menu li:first-child a {
+    display: block;
     margin-bottom: 20px;
 }
 
-footer #contact_button {
+footer .button {
     background-color: #dadee0;
     padding: 5px 10px;
-    border-radius: 5px;
     margin: 15px 0;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
-footer .social li {
+.top_footer .social li {
     font-size: 18px;
-    display: inline-block;
     width: 15%;
 }
 
@@ -445,7 +416,6 @@ footer .central_footer {
 
 footer .language li {
     font-size: 18px;
-    display: inline-block;
     margin: 20px 10px;
 }
 
@@ -457,16 +427,11 @@ footer .bottom_footer {
     margin-top: 40px;
 }
 
-.bottom_footer .col_dx {
-    text-align: right;
-}
-
-.bottom_footer .logo {
+.bottom_footer .logo_img {
     height: 35px;
     width: auto;
 }
 
 .bottom_footer .menu li {
-    display: inline-block;
     margin-left: 20px;
 }

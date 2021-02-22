@@ -35,11 +35,11 @@ body {
     clear: both;
 }
 
-* ul {
+ul {
     list-style-type: none;
 }
 
-* a {
+a {
     text-decoration: none;
 }
 
@@ -123,7 +123,7 @@ h2 {
 
 /* HEADER */
 nav .top_nav {
-    height: 90px;
+    height: 80px;
     width: 100%;
     background-color: #f4f9fd;
     border-bottom: 1px solid #33475b;
@@ -134,7 +134,7 @@ nav .top_nav {
 }
 
 header .menu ul {
-    line-height: 90px;
+    line-height: 80px;
 }
 
 header .menu li {
@@ -158,6 +158,10 @@ header .menu .fa-search {
     color:#00aac2;
 }
 
+header .menu .fa-search:hover {
+    color:#fe7759;
+}
+
 header .menu .login_btn {
     background-color: white;
     color: #fe7759;
@@ -171,8 +175,8 @@ header .menu .login_btn:hover {
 }
 
 nav .bottom_nav {
-    height: 90px;
-    margin-top: 90px;
+    height: 80px;
+    margin-top: 80px;
 }
 
 header .bottom_nav .logo_img {
@@ -183,34 +187,44 @@ header .menu .bottom_nav .fa-chevron-down {
     margin-left: 10px;
 }
 
-header .banner {
-    width: 100%;
-    height: 600px;
+header .jumbotron {
+    height: 695px;
     background-color: #fff2ee;
     background-image: url(../img/jumbotron.png);
-    background-size: 80%;
     background-repeat: no-repeat;
-    background-position: 100% 13%;
+    background-position-x: right;
+    position: relative;
 }
 
-header .banner .banner_title{
+header .jumbotron::after {
+    content: "";
+    width: 100%;
+    height: 80px;
+    background-color: #afebe4;
+    border-top: 3px solid #33475b;
+    border-bottom: 3px solid #33475b;
+    position: absolute;
+    bottom: 0;
+}
+
+header .jumbotron .jumbotron_title{
     width: 50%;
     position: absolute;
     left: 0;
     top: 40px;
 }
 
-header .banner .banner_title h1 {
+header .jumbotron .jumbotron_title h1 {
     font-size: 50px;
     margin-bottom: 20px;
 }
 
-header .banner .banner_title .button {
+header .jumbotron .jumbotron_title .button {
     margin: 30px 0;
 }
 
 .colored_row {
-    height: 100px;
+    height: 80px;
     background-color: #afebe4;
     border-top: 5px solid #33475b;
     border-bottom: 5px solid #33475b;
@@ -233,18 +247,18 @@ main .services {
     padding-top: 50px;
 }
 
-.services .col_crm_sx {
-    float: left;
-    width: 25%;
-    margin-right: 10%;
+.services .top_row .pop_fea {
+    position: relative;
 }
 
-.services .col_crm_dx {
-    float: left;
+.services .top_row .pop_fea::after {
+    content: "";
     height: 1.5px;
     width: 65%;
-    margin-top: 40px;
     background-color: #33475b;
+    position: absolute;
+    top: 10px;
+    right: 0;
 }
 
 main .services .col img {
@@ -358,7 +372,7 @@ main .results .nmb {
 }
 
 main .partners {
-    padding: 60px 10% 0;
+    padding: 60px 8% 0;
 }
 
 main .partners .col_sx {
@@ -376,9 +390,10 @@ main .partners #customers_number {
     padding-bottom: 50px;
 }
 
-main .partners .col_dx img {
-    width: 18%;
+main .partners li {
+    width: 17%;
     margin-left: 3%;
+    height: auto;
     vertical-align: middle;
 }
 

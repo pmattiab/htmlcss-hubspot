@@ -43,7 +43,7 @@ a {
     text-decoration: none;
 }
 
-* .display_ib li {
+.display_ib li {
     display: inline-block;
 }
 
@@ -137,13 +137,12 @@ header .menu ul {
     line-height: 80px;
 }
 
-header .menu li {
-    margin: 0 10px;
+header .menu .col_sx li {
+    margin-right: 10px;
 }
 
-header .top_nav .language_choise,
-header .bottom_nav .logo {
-    margin-left: 0;
+header .menu .col_dx li {
+    margin-left: 20px;
 }
 
 header .menu .language_choise a {
@@ -365,10 +364,16 @@ main .results img {
     width: auto;
 }
 
-main .results .nmb {
+main .results h3 {
     font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
+    line-height: 70px;
+}
+
+main .results h3::after {
+    content: "+";
+    font-size: 60%;
+    margin-left: 5px;
+    vertical-align: middle;
 }
 
 main .partners {
